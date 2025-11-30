@@ -6,10 +6,10 @@ import lombok.*;
 import java.util.UUID;
 
 @Entity
-@Table (name = "company")
-@AllArgsConstructor
+@Table (name = "jobposition")
 @NoArgsConstructor
-public class Company {
+@AllArgsConstructor
+public class JobPosition {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,10 +19,9 @@ public class Company {
 
     @Getter
     @Setter
-    private String name;
+    private String role;
 
-    public Company(String name) {
-        this.name = name;
+    public JobPosition(String role) {
+        this.role = role;
     }
-
 }
