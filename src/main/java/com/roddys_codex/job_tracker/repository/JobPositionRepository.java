@@ -1,6 +1,6 @@
 package com.roddys_codex.job_tracker.repository;
 
-import com.roddys_codex.job_tracker.entity.Company;
+import com.roddys_codex.job_tracker.entity.JobPosition;
 import org.jspecify.annotations.NullMarked;
 import org.springframework.data.repository.CrudRepository;
 
@@ -9,9 +9,9 @@ import java.util.Optional;
 import java.util.UUID;
 
 @NullMarked
-public interface JobPosition extends CrudRepository<JobPosition, UUID> {
+public interface JobPositionRepository extends CrudRepository<JobPosition, UUID> {
 
-    List<JobPosition> findByName();
+    List<JobPosition> findByName(String name);
 
     Optional<JobPosition> findById(UUID id);
 }
