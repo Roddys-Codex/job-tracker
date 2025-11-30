@@ -21,8 +21,4 @@ public class Company {
     @Setter
     private String name;
 
-    public Company(String name) {
-        this.name = name;
-    }
-
 }

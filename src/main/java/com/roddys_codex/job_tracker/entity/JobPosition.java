@@ -19,9 +19,5 @@ public class JobPosition {
 
     @Getter
     @Setter
-    private String role;
-
-    public JobPosition(String role) {
-        this.role = role;
-    }
+    private String name;
 }
