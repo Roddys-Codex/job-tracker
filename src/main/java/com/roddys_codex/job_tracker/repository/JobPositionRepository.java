@@ -13,5 +13,4 @@ public interface JobPositionRepository extends JpaRepository<JobPosition, UUID> 
 
     Optional<JobPosition> findById(UUID id);
     List<JobPosition> findAll();
-    List<JobPosition> findByName(String name);
 }

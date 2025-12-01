@@ -13,5 +13,4 @@ public interface CompanyRepository extends JpaRepository<Company, UUID> {
 
     Optional<Company> findById(UUID id);
     List<Company> findAll();
-    List<Company> findByName(String name);
 }
