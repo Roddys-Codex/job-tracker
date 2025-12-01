@@ -2,6 +2,7 @@ package com.roddys_codex.job_tracker.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.util.UUID;
 
@@ -12,7 +13,8 @@ import java.util.UUID;
 public class JobPosition {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
+    @UuidGenerator
     @Getter
     @Setter
     private UUID id;
